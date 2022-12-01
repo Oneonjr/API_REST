@@ -7,7 +7,7 @@ namespace API_REST.Models
 {
     public class Vendas
     {
-        public int Id { get; set; }
+        public int IdVendas { get; set; }
         public int itens { get; set; }
         public int Status { get; set; }  
     }

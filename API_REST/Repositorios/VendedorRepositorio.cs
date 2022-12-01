@@ -16,9 +16,9 @@ namespace API_REST.Repositorios
             _dbContext =vendasContext;
         }
 
-        public Task<VendedorModel> BuscarPorId(int id)
+        public async Task<VendedorModel> BuscarPorId(int id)
         {
-            throw new NotImplementedException();
+            return await _dbContext.Vendedor.FirstOrDefault(x => x.Id == id);
         }
 
         public Task<List<VendedorModel>> BuscarVendedor()
