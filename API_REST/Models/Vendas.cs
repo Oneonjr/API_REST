@@ -8,7 +8,8 @@ namespace API_REST.Models
     public class Vendas
     {
         public int IdVendas { get; set; }
-        public int itens { get; set; }
-        public int Status { get; set; }  
+        public int QuantidadeItens { get; set; }
+        public string Situacao { get; set; }
+
     }
 }
