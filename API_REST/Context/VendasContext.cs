@@ -16,6 +16,7 @@ namespace API_REST.Context
 
         public DbSet<VendedorModel> Vendedor {get; set;}
         public DbSet<Vendas> Vendas {get; set;}
+        public DbSet<Situacao> Situacao {get; set;}
 
     }
 }

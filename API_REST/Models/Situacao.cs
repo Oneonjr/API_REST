@@ -5,12 +5,9 @@ using System.Threading.Tasks;
 
 namespace API_REST.Models
 {
-    public class Vendas
+    public class Situacao
     {
         public int Id { get; set; }
-        public int QuantidadeItens { get; set; }
-        public int VendedorId { get; set; }
-        public VendedorModel Vendedor { get; set; }
-
+        public string Status { get; set; }
     }
 }

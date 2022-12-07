@@ -31,7 +31,29 @@ namespace API_REST.Controllers
         public IActionResult CriarVendedor(VendedorModel vendedor)
         {   
             _context.Add(vendedor);
+            _context.SaveChanges();
             return Ok(vendedor);
+        }
+
+        [HttpPut("{id}")]
+        public IActionResult Atualizar(int id, VendedorModel vendedor)
+        {
+            var vendedorBanco =_context.Vendedor.Find(id);
+
+            if (vendedorBanco == null)
+            
+                return NotFound();
+            
+
+            vendedorBanco.Nome = vendedor.Nome;
+            vendedorBanco.Email = vendedor.Email;
+            vendedorBanco.Cpf = vendedor.Cpf;
+            vendedorBanco.Telefone = vendedor.Telefone;
+
+            _context.Vendedor.Update(vendedorBanco);
+            _context.SaveChanges();
+
+            return Ok(vendedorBanco);
         }
     }
 
