@@ -1,0 +1,143 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>API_REST</name>
+    </assembly>
+    <members>
+        <member name="M:API_REST.Controllers.VendasController.BuscarTodasVendas">
+             <sumary>
+             Obter Todas as Vendas.
+             </sumary>
+            <response code="200">A lista de vendas foi obtida com Sucesso.</response>
+            <response code="500">Ocorreu um erro ao obter a lista, verique e tente novamente.</response>
+        </member>
+        <member name="M:API_REST.Controllers.VendasController.CriarVendas(API_REST.Models.Vendas)">
+            <summary>
+            Cadastrar Venda.
+            </summary>
+            <param name="vendas">Modelo do usuário.</param>
+            <response code="200">A Venda foi cadastrada com sucesso.</response>
+            <response code="400">O id da Venda enviado é inválido.</response>
+            <response code="500">Ocorreu um erro ao cadastrar a Venda.</response>
+        </member>
+        <member name="M:API_REST.Controllers.VendasController.Atualizar(System.Int32,API_REST.Models.Vendas)">
+            <summary>
+            Alterar Venda.
+            </summary> 
+            <param name="id">ID da Venda.</param>
+            <param name="vendas">Modelo do Venda.</param>
+            <response code="200">A Venda foi alterado com sucesso.</response>
+            <response code="400">O modelo da Venda enviado é inválido.</response>
+            <response code="404">Não foi encontrado Venda com ID especificado.</response>
+            <response code="500">Ocorreu um erro ao alterar a Venda.</response>
+        </member>
+        <member name="T:APIREST.Migrations.CriacaoTabelaVendas">
+            <inheritdoc />
+        </member>
+        <member name="M:APIREST.Migrations.CriacaoTabelaVendas.Up(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:APIREST.Migrations.CriacaoTabelaVendas.Down(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:APIREST.Migrations.CriacaoTabelaVendas.BuildTargetModel(Microsoft.EntityFrameworkCore.ModelBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="T:APIREST.Migrations.VendasEntities">
+            <inheritdoc />
+        </member>
+        <member name="M:APIREST.Migrations.VendasEntities.Up(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:APIREST.Migrations.VendasEntities.Down(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:APIREST.Migrations.VendasEntities.BuildTargetModel(Microsoft.EntityFrameworkCore.ModelBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="T:APIREST.Migrations.VendasEntitiess">
+            <inheritdoc />
+        </member>
+        <member name="M:APIREST.Migrations.VendasEntitiess.Up(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:APIREST.Migrations.VendasEntitiess.Down(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:APIREST.Migrations.VendasEntitiess.BuildTargetModel(Microsoft.EntityFrameworkCore.ModelBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="T:APIREST.Migrations.alteraçãoVendedor">
+            <inheritdoc />
+        </member>
+        <member name="M:APIREST.Migrations.alteraçãoVendedor.BuildTargetModel(Microsoft.EntityFrameworkCore.ModelBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:APIREST.Migrations.alteraçãoVendedor.Up(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:APIREST.Migrations.alteraçãoVendedor.Down(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="T:APIREST.Migrations.CriandoVinculoVendasVendedor">
+            <inheritdoc />
+        </member>
+        <member name="M:APIREST.Migrations.CriandoVinculoVendasVendedor.Up(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:APIREST.Migrations.CriandoVinculoVendasVendedor.Down(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:APIREST.Migrations.CriandoVinculoVendasVendedor.BuildTargetModel(Microsoft.EntityFrameworkCore.ModelBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="T:APIREST.Migrations.CriandoVinculoVendasVendedor2">
+            <inheritdoc />
+        </member>
+        <member name="M:APIREST.Migrations.CriandoVinculoVendasVendedor2.Up(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:APIREST.Migrations.CriandoVinculoVendasVendedor2.Down(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:APIREST.Migrations.CriandoVinculoVendasVendedor2.BuildTargetModel(Microsoft.EntityFrameworkCore.ModelBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="T:APIREST.Migrations.CriandoChavestrageira">
+            <inheritdoc />
+        </member>
+        <member name="M:APIREST.Migrations.CriandoChavestrageira.Up(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:APIREST.Migrations.CriandoChavestrageira.Down(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:APIREST.Migrations.CriandoChavestrageira.BuildTargetModel(Microsoft.EntityFrameworkCore.ModelBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="T:APIREST.Migrations.CriandoStatus">
+            <inheritdoc />
+        </member>
+        <member name="M:APIREST.Migrations.CriandoStatus.Up(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:APIREST.Migrations.CriandoStatus.Down(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:APIREST.Migrations.CriandoStatus.BuildTargetModel(Microsoft.EntityFrameworkCore.ModelBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="T:APIREST.Migrations.CriandoStatus2">
+            <inheritdoc />
+        </member>
+        <member name="M:APIREST.Migrations.CriandoStatus2.Up(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:APIREST.Migrations.CriandoStatus2.Down(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:APIREST.Migrations.CriandoStatus2.BuildTargetModel(Microsoft.EntityFrameworkCore.ModelBuilder)">
+            <inheritdoc />
+        </member>
+    </members>
+</doc>

@@ -3,6 +3,7 @@ using System;
 using API_REST.Context;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 #nullable disable
@@ -10,9 +11,11 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace APIREST.Migrations
 {
     [DbContext(typeof(VendasContext))]
-    partial class VendasContextModelSnapshot : ModelSnapshot
+    [Migration("20221207233515_CriandoVinculoVendasVendedor2")]
+    partial class CriandoVinculoVendasVendedor2
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -43,18 +46,10 @@ namespace APIREST.Migrations
                         .HasColumnType("datetime(6)");
 
                     b.Property<int>("QuantidadeItens")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int")
-                        .HasDefaultValue(1);
+                        .HasColumnType("int");
 
-                    b.Property<string>("Status")
-                        .IsRequired()
-                        .HasColumnType("longtext")
-                        .HasColumnName("id_Status");
-
-                    b.Property<int>("VendedorId")
-                        .HasColumnType("int")
-                        .HasColumnName("id_Vendedor");
+                    b.Property<int?>("VendedorId")
+                        .HasColumnType("int");
 
                     b.HasKey("Id");
 
@@ -90,9 +85,7 @@ namespace APIREST.Migrations
                 {
                     b.HasOne("API_REST.Models.VendedorModel", "Vendedor")
                         .WithMany("Vendas")
-                        .HasForeignKey("VendedorId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
+                        .HasForeignKey("VendedorId");
 
                     b.Navigation("Vendedor");
                 });

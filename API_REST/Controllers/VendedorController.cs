@@ -27,13 +27,13 @@ namespace API_REST.Controllers
         }
 
 
-        [HttpPost]
-        public IActionResult CriarVendedor(VendedorModel vendedor)
-        {   
-            _context.Add(vendedor);
-            _context.SaveChanges();
-            return Ok(vendedor);
-        }
+        // [HttpPost]
+        // public IActionResult CriarVendedor(VendedorModel vendedor)
+        // {   
+        //     _context.Add(vendedor);
+        //     _context.SaveChanges();
+        //     return Ok(vendedor);
+        // }
 
         [HttpPut("{id}")]
         public IActionResult Atualizar(int id, VendedorModel vendedor)

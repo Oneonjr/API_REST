@@ -3,6 +3,7 @@ using System;
 using API_REST.Context;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 #nullable disable
@@ -10,9 +11,11 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace APIREST.Migrations
 {
     [DbContext(typeof(VendasContext))]
-    partial class VendasContextModelSnapshot : ModelSnapshot
+    [Migration("20221212231805_CriandoStatus")]
+    partial class CriandoStatus
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -47,9 +50,8 @@ namespace APIREST.Migrations
                         .HasColumnType("int")
                         .HasDefaultValue(1);
 
-                    b.Property<string>("Status")
-                        .IsRequired()
-                        .HasColumnType("longtext")
+                    b.Property<int>("Status")
+                        .HasColumnType("int")
                         .HasColumnName("id_Status");
 
                     b.Property<int>("VendedorId")

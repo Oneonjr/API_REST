@@ -12,5 +12,6 @@ namespace API_REST.Models
         public string Nome { get; set; }
         public string Email { get; set; }
         public string Telefone { get; set; }
+        public virtual List<Vendas> Vendas {get;}
     }
 }
