@@ -75,5 +75,3 @@ C:\Users\Sindauto_Conecta\Desktop\API_REST\API_REST\bin\Debug\net6.0\System.Text
 C:\Users\Sindauto_Conecta\Desktop\API_REST\API_REST\bin\Debug\net6.0\System.Text.Json.dll
 C:\Users\Sindauto_Conecta\Desktop\API_REST\API_REST\bin\Debug\net6.0\runtimes\browser\lib\net6.0\System.Text.Encodings.Web.dll
 C:\Users\Sindauto_Conecta\Desktop\API_REST\API_REST\bin\Debug\net6.0\Newtonsoft.Json.dll
-C:\Users\Sindauto_Conecta\Desktop\API_REST\API_REST\bin\Debug\net6.0\API_REST.xml
-C:\Users\Sindauto_Conecta\Desktop\API_REST\API_REST\obj\Debug\net6.0\API_REST.xml

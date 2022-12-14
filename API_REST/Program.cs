@@ -14,12 +14,13 @@ var connectionStringMysql = builder.Configuration.GetConnectionString("ConexaoPa
 builder.Services.AddDbContext<VendasContext>(options => 
     options.UseMySql(connectionStringMysql,ServerVersion.Parse("8.0.31 MySQL")));
 
-                                  //Ignorando Erro Json.
+
+//Ignorando Erro Json.
 builder.Services.AddControllers().AddJsonOptions(x => 
                 x.JsonSerializerOptions.ReferenceHandler = ReferenceHandler.IgnoreCycles);
 ;
 
-//Ignorando Erro Json
+//Ignorando Erros Json
 JsonSerializerOptions options = new JsonSerializerOptions{
     Converters ={
         new JsonStringEnumConverter( JsonNamingPolicy.CamelCase)

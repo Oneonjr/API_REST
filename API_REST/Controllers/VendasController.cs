@@ -46,8 +46,9 @@ namespace API_REST.Controllers
             
                 return NotFound();
             
-            vendasBanco.Status = vendas.Status;
             
+            vendasBanco.Status = vendas.Status;
+
 
             _context.Vendas.Update(vendasBanco);
             _context.SaveChanges();
