@@ -12,7 +12,7 @@ var builder = WebApplication.CreateBuilder(args);
 
 var connectionStringMysql = builder.Configuration.GetConnectionString("ConexaoPadrao");
 builder.Services.AddDbContext<VendasContext>(options => 
-    options.UseMySql(connectionStringMysql,ServerVersion.Parse("8.0.31 MySQL")));
+    options.UseMySql(connectionStringMysql,ServerVersion.Parse("8.0.31 MySQL"))); //utilizando MySql
 
 
 //Ignorando Erro Json.
