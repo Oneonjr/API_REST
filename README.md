@@ -9,10 +9,15 @@ O objetivo era fazer um CRUD em que uma venda necessite de um vendedor atrelado 
 O meior desafio nesta etapa foi de fazer com que as duas tabelas se relacione, porém como podem ver no [Vídeo de Demonstração](https://youtu.be/AIr8XDpVucM), consegui realizar estas questões, porém faltou a parte das atualizações  que deveriam obedecer as seguintes transições:
 
 **De**: Aguardando pagamento  **Para**: Pagamento Aprovado
+
 **De**: Aguardando pagamento   **Para**: Cancelada
+
 **De**: Pagamento Aprovado    **Para**: Enviado para Transportadora
+
 **De**: Pagamento Aprovado   **Para**: Cancelada
+
 **De**: Enviado para Transportador. **Para**: Entregue
+
 
 # Tecnologias utilizadas:
 
